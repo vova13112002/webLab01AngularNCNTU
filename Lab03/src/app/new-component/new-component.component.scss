@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+}
+
+.wrapper {}
+
+.header {
+  &__title {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Lab Grotesque';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFCF7A;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav {
+  padding: 30px;
+}
+
+.menu {
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 25px;
+
+  }
+
+  &__list-item {
+    margin: 0 auto;
+
+  }
+
+  &__list-link {
+    font-family: 'Lab Grotesque';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #949494;
+
+    &:hover {
+      color: #FFCF7A;
+      transition: ease 0.66s;
+    }
+  }
+}
