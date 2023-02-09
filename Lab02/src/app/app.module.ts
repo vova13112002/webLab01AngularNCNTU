@@ -10,7 +10,7 @@ import { NewComponentComponent } from './new-component/new-component.component';
     AppComponent,
     NewComponentComponent
   ],
-  // entryComponents:[ newComponent ],
+
   imports: [
     BrowserModule,
     AppRoutingModule

@@ -1,0 +1,92 @@
+.Username{
+  text-align: center;
+}
+.input {
+  margin: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  // max-width: 300px;
+  padding: 15px 200px 15px 25px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 1px 2px 5px rgb(255, 69, 0);
+  color: #fff;
+}
+.search__git-title{
+  margin-top: 20px;
+    text-align: center;
+    font-family: 'Lab Grotesque';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFCF7A;
+}
+
+  .card{
+    
+&__item {
+    width: 190px;
+    height: 254px;
+    background: #3405a3;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #100a886b;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+    &__border-top {
+    width: 60%;
+    height: 3%;
+    background: #6b64f3;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  &__person {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
+  &__job  {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+  }
+
+  &__img {
+    width: 70px;
+    height: 80px;
+    background: #6b64f3;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+  &__button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #6b64f3;
+    color: white;
+    font-weight: 600;
+  }
+
+  &__button:hover {
+    background: #534bf3;
+  }
+  }
+ 
