@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NewComponentComponent } from './new-component/new-component.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainApiComponent } from './main-api/main-api.component';
+import { NewServiceService } from './new-service.service';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,9 +17,10 @@ import { MainApiComponent } from './main-api/main-api.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [NewServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

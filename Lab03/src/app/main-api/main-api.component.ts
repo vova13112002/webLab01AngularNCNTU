@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { fromEvent } from "rxjs";
 import { map } from 'rxjs/operators';
@@ -8,11 +9,15 @@ import { map } from 'rxjs/operators';
 })
 
 export class MainApiComponent {
-  url = 'https://api.github.com/search/users?q=';
-  search = document.getElementById('search');
-  stream$ = fromEvent(this.search, 'input').pipe(
-    map(value => {
-      console.log(value);
-    })
-  );
+  userName: string = "";
+  response: any;
+  constructor(private http: HttpClient) {
+  }
+  search() {
+    this.http.get('https://api.github.com/search/users/' + this.userName)
+      .subscribe((response) => {
+        this.response = response;
+        console.log(this.response);
+      })
+  }
 }
