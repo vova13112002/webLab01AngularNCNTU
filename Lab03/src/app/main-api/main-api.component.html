@@ -3,9 +3,8 @@
   <input
     class="input"
     placeholder="Username"
-    name="text"
     type="text"
-    id="search"
+    [(ngModel)]="userName"
   />
   <button (click)="search()">Пошук</button>
 </div>
@@ -20,3 +19,4 @@
     <button class="card__button">GitHub</button>
   </div>
 </div>
+<!-- User name: <input type="text" /> -->
