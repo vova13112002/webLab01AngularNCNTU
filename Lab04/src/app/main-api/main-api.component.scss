@@ -1,0 +1,142 @@
+.Username{
+  text-align: center;
+  &__button{
+     
+        --glow-color: rgb(217, 176, 255);
+        --glow-spread-color: rgba(191, 123, 255, 0.781);
+        --enhanced-glow-color: rgb(231, 206, 255);
+        --btn-color: rgb(100, 61, 136);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 1em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+      
+    
+      &:after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(1em);
+        opacity: .7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+      }
+    
+      &:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 2em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+      }
+    
+      &:active {
+        box-shadow: 0 0 0.6em .15em var(--glow-color),
+          0 0 1.5em 1em var(--glow-spread-color),
+          inset 0 0 .5em .15em var(--glow-color);
+      }
+  }
+}
+.input {
+  margin: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  // max-width: 300px;
+  padding: 15px 200px 15px 25px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: 5px 10px 60px 30px #100a886b;
+  color: #fff;
+}
+.search__git-title{
+  margin-top: 20px;
+    text-align: center;
+    font-family: 'Lab Grotesque';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFCF7A;
+}
+
+  .card{
+    
+&__item {
+    width: 190px;
+    height: 254px;
+    background: #3405a3;
+    border-radius: 15px;
+   
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+    &__border-top {
+    width: 60%;
+    height: 3%;
+    background: #6b64f3;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  &__person {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
+  &__job  {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+  }
+
+  &__img {
+    width: 70px;
+    height: 80px;
+    background: #6b64f3;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+  &__button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #6b64f3;
+    color: white;
+    font-weight: 600;
+  }
+
+  &__button:hover {
+    background: #534bf3;
+  }
+  }
+ 

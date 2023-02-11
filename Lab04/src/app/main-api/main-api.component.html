@@ -1,0 +1,29 @@
+<h3 class="search__git-title">Пошук користувача GitHub</h3>
+<div class="Username">
+  <input
+    class="input"
+    placeholder="Username"
+    type="text"
+    [(ngModel)]="userName"
+  />
+  <button class="Username__button" (click)="search()">Пошук</button>
+</div>
+<div class="card">
+  <div class="card__item">
+    <div class="card__border-top"></div>
+    <div *ngIf="response" class="card__img">
+      <img src="{{ response.avatar_url }}" alt="avatar" />
+    </div>
+    <span class="card__person"> Ім'я: {{ response.login }}</span>
+    <p class="card__job">ID: {{ response.id }}</p>
+    <button class="card__button">
+      <a
+        class="card__button-link"
+        href="{{ response.html_url }}"
+        target="_blank"
+        >GitHub</a
+      >
+    </button>
+  </div>
+</div>
+<!-- User name: <input type="text" /> -->
