@@ -10,7 +10,6 @@ import { ContactuComponent } from './contactu/contactu.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactGuard } from './guards/contact.guard';
 import { ExitGuard } from './guards/exit.guard';
-
 const appRoutes: Routes = [
   {
     path: 'contactu',
@@ -28,7 +27,6 @@ const appRoutes: Routes = [
     AppComponent,
     MainApiComponent,
     ContactuComponent,
-
   ],
   imports: [
     BrowserModule,
