@@ -19,4 +19,8 @@ export class MainApiComponent {
         console.log(this.response);
       })
   }
+  canExit = false;
+  onClick() {
+    this.canExit = !this.canExit;
+  }
 }
