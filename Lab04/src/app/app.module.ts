@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ContactuComponent } from './contactu/contactu.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactGuard } from './guards/contact.guard';
+import { ExitGuard } from './guards/exit.guard';
 
 const appRoutes: Routes = [
   {
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
   },//путь і компонент до Контактів
   {
     path: 'git',
-    component: MainApiComponent
+    component: MainApiComponent,
+    canDeactivate: [ExitGuard]
   }//путь і компонент до Резюме
 ]
 @NgModule({
