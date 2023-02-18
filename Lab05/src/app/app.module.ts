@@ -11,7 +11,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactGuard } from './guards/contact.guard';
 import { ExitGuard } from './guards/exit.guard';
 import { FormsComponent } from './forms/forms.component';
-
 const appRoutes: Routes = [
   {
     path: 'contactu',
